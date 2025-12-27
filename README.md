@@ -1,19 +1,45 @@
-[README.md](https://github.com/user-attachments/files/24351815/README.md)
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+[README.md](https://github.com/user-attachments/files/24352060/README.md)
+# المتجر البلاتيني | Platinum Store Pro
 
-This contains everything you need to run your app locally.
+هذا المشروع هو منصة تجارة إلكترونية متقدمة وقابلة للتخصيص تم بناؤها باستخدام Angular. يحتوي على لوحة تحكم احترافية لإدارة المنتجات، التصميم، شركات التوصيل، والإشعارات.
 
-View your app in AI Studio: https://ai.studio/apps/drive/141s4Umdez4-m2f7cYJnDavdiaqpa8_JV
+## الميزات
 
-## Run Locally
+-   واجهة متجر قابلة للتخصيص بالكامل.
+-   لوحة تحكم لإدارة كل جوانب المتجر.
+-   نظام سلة تسوق ودفع متكامل.
+-   إدارة المنتجات، التصنيفات، والأنواع (ألوان ومقاسات).
+-   تكامل مع Gemini API لتوليد صور المنتجات.
+-   إعدادات مرنة لشركات التوصيل والإشعارات.
 
-**Prerequisites:**  Node.js
+## كيفية النشر على GitHub Pages
 
+لنشر هذا الموقع بنجاح على GitHub Pages، اتبع الخطوات التالية بدقة:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 1. بناء المشروع
+
+يجب بناء المشروع مع تحديد المسار الصحيح الذي سيتم نشر الموقع عليه.
+
+-   افتح الطرفية (Terminal) في مجلد المشروع.
+-   قم بتشغيل الأمر التالي، مع استبدال `your-repo-name` بالاسم الفعلي للمستودع الخاص بك على GitHub.
+
+    ```bash
+    ng build --base-href /your-repo-name/
+    ```
+
+    **مثال:** إذا كان اسم مستودعك هو `my-store`، سيكون الأمر: `ng build --base-href /my-store/`
+
+### 2. رفع الملفات
+
+بعد انتهاء عملية البناء، سيتم إنشاء مجلد جديد باسم `dist`. بداخل هذا المجلد، ستجد مجلدًا آخر باسم مشروعك (مثلاً: `dist/copy-of-platinum-store-pro`).
+
+-   اذهب إلى المستودع الخاص بك على GitHub.
+-   قم برفع **محتويات** المجلد `dist/copy-of-platinum-store-pro` (جميع الملفات والمجلدات التي بداخله) إلى المستودع. **لا تقم برفع المجلد نفسه، بل محتوياته فقط.**
+
+### 3. تفعيل GitHub Pages
+
+-   في إعدادات المستودع على GitHub، اذهب إلى قسم "Pages".
+-   اختر فرع `main` (أو `master`) كمصدر للنشر.
+-   احفظ الإعدادات.
+
+بعد بضع دقائق، سيصبح موقعك متاحًا على الرابط الذي يوفره GitHub.
