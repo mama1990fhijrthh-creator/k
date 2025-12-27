@@ -1,4 +1,5 @@
-[README.md](https://github.com/user-attachments/files/24352060/README.md)
+[README.mdا](https://github.com/user-attachments/files/24352064/README.md)
+[README.md](https://github.com/user-attachments/files/24352068/README.md)
 # المتجر البلاتيني | Platinum Store Pro
 
 هذا المشروع هو منصة تجارة إلكترونية متقدمة وقابلة للتخصيص تم بناؤها باستخدام Angular. يحتوي على لوحة تحكم احترافية لإدارة المنتجات، التصميم، شركات التوصيل، والإشعارات.
